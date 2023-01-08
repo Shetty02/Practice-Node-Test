@@ -36,7 +36,7 @@ app.get("/", (req, res)=>{
 
 // Register Page
 app.get("/registration",(req, res)=>{
-    return res.render("Registration")
+    return res.render("registration")
 })
 app.post("/registration", async(req, res)=>{
     // return res.render("Registration")
@@ -53,7 +53,7 @@ app.post("/registration", async(req, res)=>{
 // Login Page
 app.get("/login",(req, res)=>{
     // return res.render("../app/Views/Login.ejs")
-    return res.render("Login.ejs")
+    return res.render("login")
 })
 
 
