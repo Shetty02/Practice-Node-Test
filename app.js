@@ -2,9 +2,10 @@ const express = require("express");
 const session = require("express-session");
 const app = express();
 const mongoDBSession = require("connect-mongodb-session")(session)
+const path = require('path')
 
 
-
+app.set('views', path.join(__dirname, 'views'));
 app.set("view engine", "ejs");
 
 // Files import
