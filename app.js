@@ -13,7 +13,7 @@ const mongoURL = require("./db"); // DataBase(DB) Connections
 // MiddleWares.
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
+app.use(express.static("public"))
 
 // Creating the DataBase
 const store = new mongoDBSession({
