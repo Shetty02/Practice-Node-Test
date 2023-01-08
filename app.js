@@ -52,7 +52,8 @@ app.post("/registration", async(req, res)=>{
 
 // Login Page
 app.get("/login",(req, res)=>{
-    return res.render("Login")
+    // return res.render("../app/Views/Login.ejs")
+    return res.render("Login.ejs")
 })
 
 
